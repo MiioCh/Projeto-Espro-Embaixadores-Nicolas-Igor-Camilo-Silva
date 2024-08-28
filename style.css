@@ -1,13 +1,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: '', sans-serif;
     background-color: #ecf0f1;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -30,6 +32,63 @@ header {
     justify-content: space-between;
     width: 100%;
 }
+
+
+.guia {
+    position: absolute; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    top: 430px; 
+    left: 500px; 
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(90deg, #004080, #0074cc, #0066ff);
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s;
+    z-index: 10;
+}
+
+.cta {
+    position: absolute;
+    font-family: 'Montserrat' ;
+    text-shadow: 2px 2px 8px black;
+    top: 40%;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    font-size: 3em;
+}
+
+.cta1 {
+    position: absolute;
+    font-family: 'Montserrat' ;
+    text-shadow: 2px 2px 8px black;
+    top: 50%;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    font-size: 1em;
+}
+
+.cta h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cta1 p1 {
+    font-size: 3em;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
 
 .barra-pesquisa {
     display: flex;
@@ -164,6 +223,7 @@ nav ul li:last-child {
 .fundo-slide #disclaimer {
     max-width: 600px;
     text-align: left;
+    font-family: "Montserrat", sans-serif;;
 }
 
 .fundo-slide #disclaimer p,
@@ -173,14 +233,15 @@ nav ul li:last-child {
 
 .extra-image {
     position: absolute;
-    left: 20px;
+    left: 230px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .extra-image img {
-    width: 500px;
+    width: 450px;
     height: auto;
+    
 }
 
 #disclaimer {
@@ -201,6 +262,7 @@ nav ul li:last-child {
     margin: 0 auto;
     z-index: 1;
     position: absolute;
+    font-family: "Montserrat", sans-serif;;
 }
 
 .bar-left {
@@ -444,4 +506,72 @@ input[type="radio"]:checked + .bar {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.espro-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0b2545;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.esprometro {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    margin-left: 60px;
+    margin-right: 5px;
+}
+
+.metric-item {
+    text-align: center;
+    margin: 0 5px; 
+    padding-right: 20px; 
+}
+
+.metric-value {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.metric-label {
+    font-size: 12px;
+    margin: auto
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-participe, .btn-doar {
+    background-color: #2ebf91;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    padding-right: 50px;
+}
+
+
+.btn-participe:hover, .btn-doar:hover {
+    background-color: #23a676;
+
 }
