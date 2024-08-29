@@ -25,6 +25,7 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
+
 .cabeça {
     position: relative;
     display: flex;
@@ -33,15 +34,28 @@ header {
     width: 100%;
 }
 
+.respo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
 
 .guia {
-    position: absolute; 
+    position: relative;
+    top: -180px; 
+    left: 190px; 
+    transform: translateX(-50%);
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    top: 430px; 
-    left: 500px; 
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 15px 20px; 
+    font-size: 1em; 
     color: white;
     background: linear-gradient(90deg, #004080, #0074cc, #0066ff);
     border-radius: 50px;
@@ -49,7 +63,12 @@ header {
     text-decoration: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s, transform 0.3s;
-    z-index: 10;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+guia2 {
+    z-index: 9999;
 }
 
 .cta {
