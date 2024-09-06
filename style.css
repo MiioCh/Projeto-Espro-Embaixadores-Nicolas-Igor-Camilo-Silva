@@ -13,6 +13,7 @@ html, body {
     background-color: #ecf0f1;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: white;
 }
 
 header {
@@ -44,6 +45,9 @@ header {
     width: 100%;
     padding: 20px;
     text-align: center;
+    z-index: 30;
+    animation: fadeInRight 1s ease-out both;
+    
 }
 
 
@@ -63,13 +67,14 @@ header {
     text-decoration: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s, transform 0.3s;
-    z-index: 9999;
+    z-index: 70;
     pointer-events: auto;
 }
 
-guia2 {
-    z-index: 9999;
+.guia2 {
+    z-index: 8000;
 }
+
 
 .cta {
     position: absolute;
@@ -81,6 +86,7 @@ guia2 {
     color: white;
     width: 100%;
     font-size: 3em;
+    z-index: 50;
 }
 
 .cta1 {
@@ -255,6 +261,7 @@ nav ul li:last-child {
     left: 230px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 40;
 }
 
 .extra-image img {
@@ -433,6 +440,7 @@ section p {
     text-align: center;
     position: relative;
     padding: 20px;
+    z-index: 20;
 }
 
 .imgf2{
@@ -447,11 +455,13 @@ section p {
     text-align: center;
     position: relative;
     padding: 20px;
+    
 }
 
 .slides-container {
     position: relative; 
     height: 70vh; 
+    z-index: 10;
 }
 
 .navigation {
